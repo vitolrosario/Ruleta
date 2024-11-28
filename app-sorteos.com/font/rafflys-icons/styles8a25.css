@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "fa-icons";
+  src:url("fonts/fa-icons.eot");
+  src:url("fonts/fa-iconsd41d.eot?#iefix") format("embedded-opentype"),
+    url("fonts/fa-icons8a25.woff?v=1.13") format("woff"),
+    url("fonts/fa-icons.ttf") format("truetype"),
+    url("fonts/fa-icons.svg#fa-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "fa-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/** Custom **/
+[class*="fa-"],
+[class^="fa-"] {
+    display: inline-flex;
+    vertical-align: middle;
+}
+.fa-xs{font-size:.75em}
+.fa-sm{font-size:.875em}
+.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}
+.fa-1x{font-size:1em}
+.fa-2x{font-size:2em}
+.fa-3x{font-size:3em}
+.fa-4x{font-size:4em}
+.fa-5x{font-size:5em}
+.fa-6x{font-size:6em}
+.fa-7x{font-size:7em}
+.fa-8x{font-size:8em}
+.fa-9x{font-size:9em}
+.fa-10x{font-size:10em}
+/** End Custom **/
+[class^="fa-"]:before,[class*=" fa-"]:before{font-family:"fa-icons"!important;font-style:normal!important;font-weight:normal!important;font-variant:normal!important;text-transform:none!important;speak:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.fa-sort-numeric-up:before{content:"\61"}
+.fa-facebook:before{content:"\65"}
+.fa-hat-santa:before{content:"\68"}
+.fa-heart-circle:before{content:"\69"}
+.fa-instagram:before{content:"\6a"}
+.fa-random:before{content:"\6e"}
+.fa-youtube:before{content:"\6d"}
+.fa-twitter:before{content:"\6f"}
+.fa-tiktok:before{content:"\70"}
+.fa-list-ol:before{content:"\74"}
+.fa-hashtag:before{content:"\6c"}
+.fa-dharmachakra:before{content:"\67"}
+.fa-coin:before{content:"\71"}
+.fa-dropdown-arrow:before{content:"\63"}
+.fa-bolt:before{content:"\76"}
+.fa-check-circle:before{content:"\77"}
+.fa-chevron-right:before{content:"\78"}
+.fa-cog:before{content:"\79"}
+.fa-chevron-down:before{content:"\41"}
+.fa-gift:before{content:"\75"}
+.fa-linkedin:before{content:"\6b"}
+.fa-palette:before{content:"\43"}
+.fa-play:before{content:"\44"}
+.fa-star:before{content:"\46"}
+.fa-lock-alt:before{content:"\47"}
+.fa-bullseye:before{content:"\48"}
+.fa-calendar:before{content:"\49"}
+.fa-ellipsis-h:before{content:"\4a"}
+.fa-envelope:before{content:"\4b"}
+.fa-eye:before{content:"\4d"}
+.fa-magic:before{content:"\4e"}
+.fa-mobile:before{content:"\4f"}
+.fa-shield-check:before{content:"\50"}
+.fa-whatsapp:before{content:"\51"}
+.fa-stream:before{content:"\52"}
+.fa-paper-plane:before{content:"\54"}
+.fa-comments-alt:before{content:"\55"}
+.fa-plus:before{content:"\57"}
+.fa-text:before{content:"\58"}
+.fa-tablet:before{content:"\59"}
+.fa-question-circle:before{content:"\5a"}
+.fa-qrcode:before{content:"\31"}
+.fa-link:before{content:"\32"}
+.fa-arrow-left:before{content:"\64"}
+.fa-arrow-right:before{content:"\7a"}
+.fa-badge-check:before{content:"\56"}
+.fa-comments:before{content:"\30"}
+.fa-comment:before{content:"\33"}
+.fa-file:before{content:"\34"}
+.fa-share-alt:before{content:"\35"}
+.fa-times:before{content:"\36"}
+.fa-tools:before{content:"\37"}
+.fa-trash-alt:before{content:"\38"}
+.fa-video:before{content:"\39"}
+.fa-pencil:before{content:"\21"}
+.fa-desktop:before{content:"\22"}
+.fa-dot-circle:before{content:"\23"}
+.fa-dice:before{content:"\24"}
+.fa-check-double:before{content:"\25"}
+.fa-chevron-up:before{content:"\26"}
+.fa-clock:before{content:"\27"}
+.fa-edit:before{content:"\28"}
+.fa-image:before{content:"\29"}
+.fa-plug:before{content:"\2a"}
+.fa-plus-circle:before{content:"\2b"}
+.fa-sync-alt:before{content:"\2c"}
+.fa-tasks:before{content:"\2d"}
+.fa-th:before{content:"\42"}
+.fa-copy:before{content:"\2e"}
+.fa-heart:before{content:"\62"}
+.fa-thumbs-up-alt:before{content:"\66"}
+.fa-photo-video:before{content:"\73"}
+.fa-home:before{content:"\2f"}
+.fa-comment-smile:before{content:"\3a"}
+.fa-file-certificate:before{content:"\3b"}
+.fa-file-import:before{content:"\3c"}
+.fa-filter:before{content:"\3d"}
+.fa-fingerprint:before{content:"\3e"}
+.fa-font-case:before{content:"\3f"}
+.fa-check:before{content:"\40"}
+.fa-question:before{content:"\5b"}
+.fa-thumbs-up:before{content:"\5d"}
+.fa-users:before{content:"\5e"}
+.fa-user:before{content:"\5f"}
+.fa-play-circle:before{content:"\60"}
+.fa-sort-numeric-up-1:before{content:"\7b"}
+.fa-signature:before{content:"\72"}
+.fa-arrow-alt-right:before{content:"\7c"}
+.fa-star-alt:before{content:"\7d"}
+.fa-question-square:before{content:"\7e"}
+.fa-receipt:before{content:"\5c"}
+.fa-sign-out:before{content:"\e000"}
+.fa-facebook-square:before{content:"\e001"}
+.fa-globe:before{content:"\e004"}
+.fa-rabbit-fast:before{content:"\e005"}
+.fa-sack:before{content:"\e006"}
+.fa-address-card:before{content:"\e007"}
+.fa-calculator:before{content:"\e008"}
+.fa-file-plus:before{content:"\e002"}
+.fa-bullhorn:before{content:"\e003"}
+.fa-trophy-alt:before{content:"\e009"}
+.fa-dice-d20:before{content:"\e00a"}
+.fa-clipboard-list-check:before{content:"\e00b"}
+.fa-file-pen:before{content:"\e00c"}
+.fa-signs-post:before{content:"\e00d"}
+.fa-user-secret:before{content:"\e00f"}
+.fa-volume:before{content:"\e010"}
+.fa-share:before{content:"\e011"}
+.fa-save:before{content:"\e012"}
+.fa-print:before{content:"\e013"}
+.fa-file-signature:before{content:"\e014"}
+.fa-file-excel:before{content:"\e015"}
+.fa-clipboard:before{content:"\e017"}
+.fa-expand:before{content:"\e018"}
+.fa-trophy-regular:before{content:"\e019"}
+.fa-undo-alt:before{content:"\e00e"}
+.fa-at:before{content:"\4c"}
+.fa-hexagon-xmark:before{content:"\e01a"}
+.fa-heart-alt:before{content:"\e01b"}
+.fa-phone:before{content:"\e01c"}
+.fa-play-circle-alt:before{content:"\e01d"}
+.fa-stop:before{content:"\e01e"}
+.fa-times-octagon:before{content:"\e01f"}
+.fa-volume-mute:before{content:"\e020"}
+.fa-info-circle:before{content:"\e021"}
+.fa-tacometer-alt:before{content:"\e022"}
+.fa-external-link-alt:before{content:"\53"}
+.fa-download:before{content:"\e016"}
+.fa-reddit:before{content:"\e024"}
+.fa-threads:before{content:"\e025"}
+.fa-twitch:before{content:"\e026"}
+.fa-crown:before{content:"\e023"}
+.fa-eye-alt:before{content:"\e027"}
+.fa-magnifying-glass:before{content:"\e028"}
+.fa-paste:before{content:"\e029"}
+.fa-ticket:before{content:"\e02a"}
+.fa-chart-line:before{content:"\e02b"}
+.fa-slot-machine:before{content:"\e02c"}
+.fa-eye-slash:before{content:"\e02d"}
+.fa-code:before{content:"\e02e"}
+.fa-file-download:before{content:"\e02f"}
+.fa-share-all:before{content:"\e030"}
+.fa-sort-alpha-up:before{content:"\e031"}
+.fa-sort-alpha-down:before{content:"\e032"}
+.fa-circle:before{content:"\45"}
+.fa-signal-stream:before{content:"\e033"}
+.fa-envelope-open:before{content:"\e034"}
+.fa-face-head-bandage:before{content:"\e035"}
+.fa-ban:before{content:"\e036"}
+.fa-amazon:before{content:"\e037"}
