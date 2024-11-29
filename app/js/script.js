@@ -13,6 +13,8 @@ setTimeout(() => {
     
 }, 500);
 
+var originalPeople = []
+var originalPrizes = []
 var people = []
 var prizes = []
 var winners = []
@@ -22,10 +24,31 @@ var textarea_people = null
 var isPrize = true
 
 function start() {
+
+    setTimeout(() => {
+        var closeElem = document.getElementById("close-fullscreen")
+        
+        closeElem.addEventListener('click', () => {
+            setTimeout(() => {
+                document.getElementById("textarea-people").value = originalPeople.join("\n")
+
+                var textarea_prizes = document.getElementById("textarea-prizes")
+                textarea_prizes.value = originalPrizes.join("\n")
+                textarea_prizes.dispatchEvent(new Event('input', { bubbles: true }));
+                currentPrize = null
+            }, 500);
+        });
+    }, 1000);
+
     if (!prizes.length) {
+        textarea_people = document.getElementById("textarea-people")
         currentTextarea = document.getElementById("textarea-prizes")
         prizes = currentTextarea.value.split("\n")
-        people = document.getElementById("textarea-people").value.split("\n")
+        people = textarea_people.value.split("\n")
+        if (!originalPeople.length) {
+            originalPeople = people
+            originalPrizes = prizes
+        }
     } 
 }
 
@@ -45,22 +68,20 @@ function finishRun() {
     }
 
     setTimeout(() => {
-        document.getElementById("close-fullscren").click()
+        document.getElementById("close-fullscreen").click()
         setTimeout(() => {
             currentTextarea = document.getElementById("textarea-prizes")
             currentTextarea.value = isPrize ? people.join("\n") : prizes.join("\n")
             currentTextarea.dispatchEvent(new Event('input', { bubbles: true }));
                 
-            // if (isPrize) {
             var title = document.getElementById("title_value")
             title.value = isPrize ? `${currentPrize.prize} para...` : ""
             title.dispatchEvent(new Event('input', { bubbles: true }));
-            // }
 
             isPrize = !isPrize
 
             document.getElementById("start").click()
-        }, 200);
+        }, 50);
     }, 2000);
 
 }

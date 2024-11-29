@@ -458,7 +458,7 @@
                         <div class="wof__main__l">
                             <!-- Wheel Current Winner -->
 
-                            <div id="currentPrize"></div>
+                            <!-- <div id="currentPrize"></div> -->
 
                             <div class="wof__wheel__winner" v-if="wheel_segment_name"
                                 :style="{color: design.main_color}">
@@ -560,7 +560,7 @@
                                 <i class="far fa-fw fa-trophy-regular"></i>
                                 <span>{{ $t('buttons.results') }}</span>
                             </div>
-                            <div class="wof__main__options-item" @click.stop="resetPlayWheel()"
+                            <div class="wof__main__options-item" @click.stop="resetPlayWheel()" id="resetBtn"
                                 :title="$t('app_wheel.tooltip_reset_wheel')" data-toggle="tooltip">
                                 <i class="far fa-fw far fa-undo-alt"></i>
                             </div>
@@ -570,7 +570,7 @@
                                 <i class="far fa-fw fa-volume-mute" v-else></i>
                                 <span>{{ $t('buttons.volume') }}</span>
                             </div>
-                            <div class="wof__main__options-item hide-fs" v-if="!is_wheel_play_only" id="close-fullscren"
+                            <div class="wof__main__options-item hide-fs" v-if="!is_wheel_play_only" id="close-fullscreen"
                                 @click.stop="onStopPlaying()" :title="$t('app_wheel.tooltip_close')"
                                 data-toggle="tooltip">
                                 <i class="far fa-fw fa-times"></i>
